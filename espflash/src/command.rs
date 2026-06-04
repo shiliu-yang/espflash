@@ -13,11 +13,11 @@ use crate::{
 
 const DEFAULT_TIMEOUT: Duration = Duration::from_secs(3);
 const ERASE_REGION_TIMEOUT_PER_MB: Duration = Duration::from_secs(30);
-const ERASE_WRITE_TIMEOUT_PER_MB: Duration = Duration::from_secs(40);
+const ERASE_WRITE_TIMEOUT_PER_MB: Duration = Duration::from_secs(120);
 const ERASE_CHIP_TIMEOUT: Duration = Duration::from_secs(120);
 const MEM_END_TIMEOUT: Duration = Duration::from_millis(50);
 const SYNC_TIMEOUT: Duration = Duration::from_millis(100);
-const FLASH_DEFLATE_END_TIMEOUT: Duration = Duration::from_secs(10);
+const FLASH_DEFLATE_END_TIMEOUT: Duration = Duration::from_secs(60);
 const FLASH_MD5_TIMEOUT_PER_MB: Duration = Duration::from_secs(8);
 
 // 44 is a max response length for a non-vector request.
